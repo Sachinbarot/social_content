@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:social_content/Otpscreen.dart';
 import 'package:social_content/listview_example.dart';
+import 'package:social_content/loginscreen.dart';
 import 'package:social_content/onboarding.dart';
 import 'package:social_content/register.dart';
 
@@ -21,6 +22,6 @@ class MyApp extends StatelessWidget {
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
             useMaterial3: true,
             textTheme: GoogleFonts.outfitTextTheme()),
-        home: OtpClass());
+        home: LoginCLass());
   }
 }
