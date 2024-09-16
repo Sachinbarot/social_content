@@ -16,7 +16,9 @@ class _DashboardClassState extends State<DashboardClass> {
     return Scaffold(
       body: Column(
         children: [
-          Spacer(),
+          SizedBox(
+            height: 80,
+          ),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
@@ -27,25 +29,28 @@ class _DashboardClassState extends State<DashboardClass> {
                   children: [
                     Text(
                       "Hi sachin,",
-                      style: TextStyle(fontSize: 14),
+                      style:
+                          TextStyle(fontSize: 13, fontWeight: FontWeight.w600),
                     ),
                     Text(
-                      "Good Morning!",
+                      "Good Morning!,",
                       style: TextStyle(
-                          fontSize: 14, color: ThemeColors.primarycolor),
+                          fontSize: 13,
+                          fontWeight: FontWeight.w600,
+                          color: ThemeColors.primarycolor),
                     ),
                   ],
                 ),
                 Container(
-                  height: 40,
-                  width: 40,
+                  height: 35,
+                  width: 35,
                   child: Card(
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30)),
+                        borderRadius: BorderRadius.circular(20)),
                     child: Icon(
                       LucideIcons.bell_dot,
-                      size: 20,
                       color: ThemeColors.primarycolor,
+                      size: 20,
                     ),
                   ),
                 )
@@ -54,37 +59,53 @@ class _DashboardClassState extends State<DashboardClass> {
           ),
           ListView.builder(
               shrinkWrap: true,
-              physics: ScrollPhysics(),
               primary: true,
+              physics: ScrollPhysics(),
               itemCount: Dashboard.length,
               itemBuilder: (context, index) {
-                return Container(
-                  child: Card(
-                      elevation: 0.0,
-                      child: Row(
-                        children: [
-                          Column(
-                            children: [
-                              Text(
-                                Dashboard[index]["Section"].toString(),
-                                style: TextStyle(
-                                  fontSize: 18,
+                return Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    child: Card(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15),
+                          side: BorderSide(color: ThemeColors.primarycolor)),
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  Dashboard[index]["Section"].toString(),
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    //fontWeight: FontWeight.w600,
+                                  ),
                                 ),
-                              ),
-                              Text(
-                                Dashboard[index]["subtittle"].toString(),
-                                style: TextStyle(
-                                  fontSize: 10,
-                                ),
-                              ),
-                            ],
-                          ),
-                          Image.asset(Dashboard[index]["iamge"].toString())
-                        ],
-                      )),
+                                Text(
+                                  Dashboard[index]["subtittle"].toString(),
+                                  style: TextStyle(
+                                    fontSize: 11,
+                                    //fontWeight: FontWeight.w600,
+                                  ),
+                                )
+                              ],
+                            ),
+                            Image.asset(
+                              Dashboard[index]["iamge"].toString(),
+                              height: MediaQuery.of(context).size.height / 5,
+                              width: MediaQuery.of(context).size.width / 2.1,
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
                 );
               }),
-          Spacer()
+          //Spacer()
         ],
       ),
     );
