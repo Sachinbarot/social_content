@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:social_content/Dashboard.dart';
+import 'package:social_content/HR%20section.dart';
 import 'package:social_content/Otpscreen.dart';
 import 'package:social_content/listview_example.dart';
 import 'package:social_content/loginscreen.dart';
@@ -23,6 +24,6 @@ class MyApp extends StatelessWidget {
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
             useMaterial3: true,
             textTheme: GoogleFonts.outfitTextTheme()),
-        home: DashboardClass());
+        home: HrsectionClass());
   }
 }

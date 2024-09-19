@@ -17,3 +17,13 @@ var Dashboard = [
     "iamge": "assets/team.png",
   }
 ];
+var hrsection = [
+  {"leavename": "Apply Sick \nLeave", "leaveiamge": "assets/medical.png"},
+  {"leavename": "Apply Unpaid \nLeave", "leaveiamge": "assets/unpaid.png"},
+  {"leavename": "Apply paid \nLeave", "leaveiamge": "assets/paid.png"},
+  {"leavename": "Apply Half day \nLeave", "leaveiamge": "assets/halfday.png"},
+  {
+    "leavename": "Apply Emergancy \nLeave",
+    "leaveiamge": "assets/emergancy.png"
+  },
+];
