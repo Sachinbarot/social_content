@@ -63,10 +63,10 @@ class _RegisterClassState extends State<RegisterClass> {
               "Forgot Password?",
               style: TextStyle(color: ThemeColors.primarycolor),
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
-            Container(
+            SizedBox(
               width: MediaQuery.of(context).size.width / 3.3,
               child: OutlinedButton(
                   style: ElevatedButton.styleFrom(
@@ -79,7 +79,7 @@ class _RegisterClassState extends State<RegisterClass> {
                         "Proceed",
                         style: TextStyle(color: ThemeColors.primarycolor),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 5,
                       ),
                       Icon(
@@ -89,7 +89,7 @@ class _RegisterClassState extends State<RegisterClass> {
                     ],
                   )),
             ),
-            Spacer(),
+            const Spacer(),
           ],
         ),
       ),

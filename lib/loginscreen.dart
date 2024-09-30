@@ -17,12 +17,12 @@ class _LoginCLassState extends State<LoginCLass> {
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
-            Spacer(),
+            const Spacer(),
             Text(
               "Welcome back,",
               style: TextStyle(fontSize: 20, color: ThemeColors.primarycolor),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Text(
@@ -34,24 +34,24 @@ class _LoginCLassState extends State<LoginCLass> {
               height: 200,
               width: 200,
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: TextFormField(
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                     labelText: "Enter Employee ID",
                     labelStyle: TextStyle(fontSize: 14)),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                const Text(
                   "New here?",
                   style: TextStyle(
                     fontSize: 11,
@@ -67,7 +67,7 @@ class _LoginCLassState extends State<LoginCLass> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             InkWell(
@@ -89,11 +89,11 @@ class _LoginCLassState extends State<LoginCLass> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     "Proceed",
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 5,
                   ),
                   Icon(
@@ -104,7 +104,7 @@ class _LoginCLassState extends State<LoginCLass> {
                 ],
               ),
             ),
-            Spacer(),
+            const Spacer(),
           ],
         ),
       ),

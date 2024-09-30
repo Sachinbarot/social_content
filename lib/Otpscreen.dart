@@ -15,7 +15,7 @@ class _OtpClassState extends State<OtpClass> {
     return Scaffold(
       body: Column(
         children: [
-          Spacer(),
+          const Spacer(),
           Text(
             "OTP Verification",
             style: TextStyle(
@@ -33,16 +33,16 @@ class _OtpClassState extends State<OtpClass> {
             width: 200,
             height: 200,
           ),
-          Text(
+          const Text(
             "Enter your 6 digit OTP here",
             style: TextStyle(
               fontSize: 14,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ContainerWidget(),
@@ -68,20 +68,20 @@ class _OtpClassState extends State<OtpClass> {
               ContainerWidget(),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Text(
             "00:30",
             style: TextStyle(fontSize: 12, color: ThemeColors.primarycolor),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(
+              const Text(
                 "Didn’t receive OTP?",
                 style: TextStyle(
                   fontSize: 12,
@@ -118,7 +118,7 @@ class _OtpClassState extends State<OtpClass> {
                         color: ThemeColors.primarycolor,
                         fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 5,
                   ),
                   Icon(
@@ -130,7 +130,7 @@ class _OtpClassState extends State<OtpClass> {
               ),
             ),
           ),
-          Spacer(),
+          const Spacer(),
         ],
       ),
     );
@@ -151,11 +151,11 @@ class ContainerWidget extends StatelessWidget {
       height: 40,
       width: 40,
       child: TextFormField(
-        style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold),
+        style: const TextStyle(fontSize: 11, fontWeight: FontWeight.bold),
         maxLength: 1,
         textAlign: TextAlign.center,
-        decoration:
-            (InputDecoration(border: InputBorder.none, counter: Offstage())),
+        decoration: (const InputDecoration(
+            border: InputBorder.none, counter: Offstage())),
       ),
     );
   }

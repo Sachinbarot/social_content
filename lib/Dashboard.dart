@@ -26,7 +26,7 @@ class _DashboardClassState extends State<DashboardClass> {
     return Scaffold(
       body: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 80,
           ),
           Padding(
@@ -37,7 +37,7 @@ class _DashboardClassState extends State<DashboardClass> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       "Hi sachin,",
                       style:
                           TextStyle(fontSize: 13, fontWeight: FontWeight.w600),
@@ -51,7 +51,7 @@ class _DashboardClassState extends State<DashboardClass> {
                     ),
                   ],
                 ),
-                Container(
+                SizedBox(
                   height: 35,
                   width: 35,
                   child: Card(
@@ -71,7 +71,7 @@ class _DashboardClassState extends State<DashboardClass> {
             child: ListView.builder(
                 shrinkWrap: true,
                 primary: true,
-                physics: ScrollPhysics(),
+                physics: const ScrollPhysics(),
                 itemCount: Dashboard.length,
                 itemBuilder: (context, index) {
                   return Padding(
@@ -90,14 +90,14 @@ class _DashboardClassState extends State<DashboardClass> {
                                 children: [
                                   Text(
                                     Dashboard[index]["Section"].toString(),
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       fontSize: 18,
                                       //fontWeight: FontWeight.w600,
                                     ),
                                   ),
                                   Text(
                                     Dashboard[index]["subtittle"].toString(),
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       fontSize: 11,
                                       //fontWeight: FontWeight.w600,
                                     ),

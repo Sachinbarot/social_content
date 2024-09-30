@@ -15,11 +15,11 @@ class _HrsectionClassState extends State<HrsectionClass> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: false,
-        leading: Icon(
+        leading: const Icon(
           LucideIcons.chevron_left,
           size: 20,
         ),
-        title: Text(
+        title: const Text(
           'Hr Section',
           style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
         ),
@@ -28,8 +28,8 @@ class _HrsectionClassState extends State<HrsectionClass> {
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
+            const Padding(
+              padding: EdgeInsets.all(8.0),
               child: Row(
                 children: [
                   Icon(
